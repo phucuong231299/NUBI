@@ -2,12 +2,11 @@
 import Card from "@components/doctors/grid/Card.astro";
 ---
 
-<div class="grid md:grid-cols-3 ltablet:grid-cols-3 lg:grid-cols-3 gap-x-6 ptablet:gap-x-4 gap-y-16 pt-10">
+<div
+  class="grid md:grid-cols-3 ltablet:grid-cols-3 lg:grid-cols-3 gap-x-6 ptablet:gap-x-4 gap-y-16 pt-10">
   <div x-show="activeCategory === 'all' || activeCategory === 'cardiology'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-gray-200 dark:bg-gray-800"
-      >
+      <div class="relative w-full h-40 rounded-lg bg-gray-200 dark:bg-gray-800">
         <img
           class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
           src="bar.png"
@@ -29,22 +28,16 @@ import Card from "@components/doctors/grid/Card.astro";
       <div class="flex items-center justify-between font-sans mt-3">
         <div class="flex items-center gap-2">
           <button
-            tooltip="Book appointment"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:calendar-check-duotone"
             ></i>
           </button>
           <button
-            tooltip="Send message"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
           </button>
           <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
           </button>
         </div>
@@ -61,9 +54,7 @@ import Card from "@components/doctors/grid/Card.astro";
   <!-- Doctor -->
   <div x-show="activeCategory === 'all' || activeCategory === 'gynaecology'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-gray-200 dark:bg-gray-800"
-      >
+      <div class="relative w-full h-40 rounded-lg bg-gray-200 dark:bg-gray-800">
         <img
           class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
           src="bar2.jpg"
@@ -85,22 +76,16 @@ import Card from "@components/doctors/grid/Card.astro";
       <div class="flex items-center justify-between font-sans mt-3">
         <div class="flex items-center gap-2">
           <button
-            tooltip="Book appointment"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:calendar-check-duotone"
             ></i>
           </button>
           <button
-            tooltip="Send message"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
           </button>
           <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
           </button>
         </div>
@@ -117,9 +102,7 @@ import Card from "@components/doctors/grid/Card.astro";
   <!-- Doctor -->
   <div x-show="activeCategory === 'all' || activeCategory === 'neurology'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-gray-200 dark:bg-gray-800"
-      >
+      <div class="relative w-full h-40 rounded-lg bg-gray-200 dark:bg-gray-800">
         <img
           class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
           src="bar3.png"
@@ -141,22 +124,16 @@ import Card from "@components/doctors/grid/Card.astro";
       <div class="flex items-center justify-between font-sans mt-3">
         <div class="flex items-center gap-2">
           <button
-            tooltip="Book appointment"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:calendar-check-duotone"
             ></i>
           </button>
           <button
-            tooltip="Send message"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
           </button>
           <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
           </button>
         </div>
@@ -173,9 +150,7 @@ import Card from "@components/doctors/grid/Card.astro";
   <!-- Doctor -->
   <div x-show="activeCategory === 'all' || activeCategory === 'dermatology'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-gray-200 dark:bg-gray-800"
-      >
+      <div class="relative w-full h-40 rounded-lg bg-gray-200 dark:bg-gray-800">
         <img
           class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
           src="bar4.png"
@@ -197,22 +172,16 @@ import Card from "@components/doctors/grid/Card.astro";
       <div class="flex items-center justify-between font-sans mt-3">
         <div class="flex items-center gap-2">
           <button
-            tooltip="Book appointment"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:calendar-check-duotone"
             ></i>
           </button>
           <button
-            tooltip="Send message"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
           </button>
           <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
           </button>
         </div>
@@ -229,9 +198,7 @@ import Card from "@components/doctors/grid/Card.astro";
   <!-- Doctor -->
   <div x-show="activeCategory === 'all' || activeCategory === 'general'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-gray-200 dark:bg-gray-800"
-      >
+      <div class="relative w-full h-40 rounded-lg bg-gray-200 dark:bg-gray-800">
         <img
           class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
           src="/img/illustrations/doctors/doctor-5.svg"
@@ -253,22 +220,16 @@ import Card from "@components/doctors/grid/Card.astro";
       <div class="flex items-center justify-between font-sans mt-3">
         <div class="flex items-center gap-2">
           <button
-            tooltip="Book appointment"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:calendar-check-duotone"
             ></i>
           </button>
           <button
-            tooltip="Send message"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
           </button>
           <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
           </button>
         </div>
@@ -285,9 +246,7 @@ import Card from "@components/doctors/grid/Card.astro";
   <!-- Doctor -->
   <div x-show="activeCategory === 'all' || activeCategory === 'surgery'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-gray-200 dark:bg-gray-800"
-      >
+      <div class="relative w-full h-40 rounded-lg bg-gray-200 dark:bg-gray-800">
         <img
           class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
           src="/img/illustrations/doctors/doctor-6.svg"
@@ -309,22 +268,16 @@ import Card from "@components/doctors/grid/Card.astro";
       <div class="flex items-center justify-between font-sans mt-3">
         <div class="flex items-center gap-2">
           <button
-            tooltip="Book appointment"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:calendar-check-duotone"
             ></i>
           </button>
           <button
-            tooltip="Send message"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
           </button>
           <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
           </button>
         </div>
@@ -341,9 +294,7 @@ import Card from "@components/doctors/grid/Card.astro";
   <!-- Doctor -->
   <div x-show="activeCategory === 'all' || activeCategory === 'gynaecology'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-gray-200 dark:bg-gray-800"
-      >
+      <div class="relative w-full h-40 rounded-lg bg-gray-200 dark:bg-gray-800">
         <img
           class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
           src="/img/illustrations/doctors/doctor-7.svg"
@@ -365,22 +316,16 @@ import Card from "@components/doctors/grid/Card.astro";
       <div class="flex items-center justify-between font-sans mt-3">
         <div class="flex items-center gap-2">
           <button
-            tooltip="Book appointment"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:calendar-check-duotone"
             ></i>
           </button>
           <button
-            tooltip="Send message"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
           </button>
           <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
           </button>
         </div>
@@ -397,9 +342,7 @@ import Card from "@components/doctors/grid/Card.astro";
   <!-- Doctor -->
   <div x-show="activeCategory === 'all' || activeCategory === 'cardiology'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-gray-200 dark:bg-gray-800"
-      >
+      <div class="relative w-full h-40 rounded-lg bg-gray-200 dark:bg-gray-800">
         <img
           class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
           src="/img/illustrations/doctors/doctor-8.svg"
@@ -421,22 +364,16 @@ import Card from "@components/doctors/grid/Card.astro";
       <div class="flex items-center justify-between font-sans mt-3">
         <div class="flex items-center gap-2">
           <button
-            tooltip="Book appointment"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:calendar-check-duotone"
             ></i>
           </button>
           <button
-            tooltip="Send message"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
           </button>
           <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
           </button>
         </div>
@@ -453,9 +390,7 @@ import Card from "@components/doctors/grid/Card.astro";
   <!-- Doctor -->
   <div x-show="activeCategory === 'all' || activeCategory === 'general'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-gray-200 dark:bg-gray-800"
-      >
+      <div class="relative w-full h-40 rounded-lg bg-gray-200 dark:bg-gray-800">
         <img
           class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
           src="/img/illustrations/doctors/doctor-9.svg"
@@ -477,22 +412,16 @@ import Card from "@components/doctors/grid/Card.astro";
       <div class="flex items-center justify-between font-sans mt-3">
         <div class="flex items-center gap-2">
           <button
-            tooltip="Book appointment"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:calendar-check-duotone"
             ></i>
           </button>
           <button
-            tooltip="Send message"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
           </button>
           <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
           </button>
         </div>
@@ -509,9 +438,7 @@ import Card from "@components/doctors/grid/Card.astro";
   <!-- Doctor -->
   <div x-show="activeCategory === 'all' || activeCategory === 'general'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-gray-200 dark:bg-gray-800"
-      >
+      <div class="relative w-full h-40 rounded-lg bg-gray-200 dark:bg-gray-800">
         <img
           class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
           src="/img/illustrations/doctors/doctor-10.svg"
@@ -533,22 +460,16 @@ import Card from "@components/doctors/grid/Card.astro";
       <div class="flex items-center justify-between font-sans mt-3">
         <div class="flex items-center gap-2">
           <button
-            tooltip="Book appointment"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:calendar-check-duotone"
             ></i>
           </button>
           <button
-            tooltip="Send message"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
           </button>
           <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
           </button>
         </div>
@@ -565,9 +486,7 @@ import Card from "@components/doctors/grid/Card.astro";
   <!-- Doctor -->
   <div x-show="activeCategory === 'all' || activeCategory === 'surgery'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-gray-200 dark:bg-gray-800"
-      >
+      <div class="relative w-full h-40 rounded-lg bg-gray-200 dark:bg-gray-800">
         <img
           class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
           src="/img/illustrations/doctors/doctor-11.svg"
@@ -589,22 +508,16 @@ import Card from "@components/doctors/grid/Card.astro";
       <div class="flex items-center justify-between font-sans mt-3">
         <div class="flex items-center gap-2">
           <button
-            tooltip="Book appointment"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:calendar-check-duotone"
             ></i>
           </button>
           <button
-            tooltip="Send message"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
           </button>
           <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
           </button>
         </div>
@@ -621,9 +534,7 @@ import Card from "@components/doctors/grid/Card.astro";
   <!-- Doctor -->
   <div x-show="activeCategory === 'all' || activeCategory === 'dermatology'">
     <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-gray-200 dark:bg-gray-800"
-      >
+      <div class="relative w-full h-40 rounded-lg bg-gray-200 dark:bg-gray-800">
         <img
           class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
           src="/img/illustrations/doctors/doctor-12.svg"
@@ -645,22 +556,16 @@ import Card from "@components/doctors/grid/Card.astro";
       <div class="flex items-center justify-between font-sans mt-3">
         <div class="flex items-center gap-2">
           <button
-            tooltip="Book appointment"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:calendar-check-duotone"
             ></i>
           </button>
           <button
-            tooltip="Send message"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
           </button>
           <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
+            class="h-8 w-8 rounded-full text-gray-400 hover:text-primary-500 hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-800 flex items-center justify-center tw-accessiblity transition-colors duration-300">
             <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
           </button>
         </div>
