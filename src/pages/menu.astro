@@ -5,6 +5,7 @@ import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Button from "@components/ui/button.astro";
 import Contactform from "@components/contactform.astro";
+import Menu from "@components/menupopula.astro";
 ---
 
 <Layout title="Contact">
@@ -13,115 +14,6 @@ import Contactform from "@components/contactform.astro";
       <Fragment slot="title">Menu</Fragment>
       <Fragment slot="desc">We are a here to help.</Fragment>
     </Sectionhead>
-
-    <section class="menu" id="menu">     
-        <div class="container box-container">
-     
-           <div class="box">
-              <img src="menu-1.png" alt="">
-              <h3>coffee bean</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eos.</p>
-              <a href="#" class="link-btn">read more</a>
-           </div>
-     
-           <div class="box">
-              <img src="./menu-2.png" alt="">
-              <h3>coffee bean</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eos.</p>
-              <a href="#" class="link-btn">read more</a>
-           </div>
-     
-           <div class="box">
-              <img src="./menu-3.png" alt="">
-              <h3>coffee bean</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eos.</p>
-              <a href="#" class="link-btn">read more</a>
-           </div>
-     
-           <div class="box">
-              <img src="./menu-4.png" alt="">
-              <h3>coffee bean</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eos.</p>
-              <a href="#" class="link-btn">read more</a>
-           </div>
-     
-           <div class="box">
-              <img src="./menu-5.png" alt="">
-              <h3>coffee bean</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eos.</p>
-              <a href="#" class="link-btn">read more</a>
-           </div>
-     
-           <div class="box">
-              <img src="./menu-6.png" alt="">
-              <h3>coffee bean</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eos.</p>
-              <a href="#" class="link-btn">read more</a>
-           </div>
-     
-        </div>
-     
-     </section>
+    <Menu></Menu>
   </Container>
 </Layout>
-<style>
-   
-
-
-html {
-  font-size: 62.5%;
-
-}
-section {
- 
-}
-    .menu {
-  background: #eee;
-}
-
-.menu .box-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 2rem;
-}
-
-.menu .box-container .box {
-  text-align: center;
-  padding: 3rem 2rem;
-  border-radius: .5rem;
-}
-
-.menu .box-container .box:hover {
-  background: #fff;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  -webkit-transform: translateY(-1rem);
-          transform: translateY(-1rem);
-}
-
-.menu .box-container .box img {
-  height: 15rem;
-  margin-bottom: 2rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-
-}
-
-.menu .box-container .box h3 {
-  font-size: 2rem;
-  text-transform: capitalize;
-  color: #222;
-}
-
-.menu .box-container .box p {
-  padding: 1rem 0;
-  font-size: 1.5rem;
-  line-height: 2;
-  color: #666;
-  margin-bottom: 0;
-}
-</style>
