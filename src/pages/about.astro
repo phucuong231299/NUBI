@@ -14,17 +14,12 @@ import Grid from "@components/doctors/grid/Grid.astro";
       <Fragment slot="title">Thông tin</Fragment>
       <Fragment slot="desc">We are a small passionate team.</Fragment>
     </Pagetitle>
-    <div id="doctors" x-data="doctors()"  x-intersect="activeStep = 'spy-1'">
-      <!-- <Toolbar /> -->
-
-      <!--Grid wrapper-->
       <div class="py-10">
           <div class="col-span-12 lg:col-span-9">
             <!--Subgrid-->
             <Grid />
           </div>
         </div>
-      </div>
     <br><br>
     <Map></Map>
   </Container>

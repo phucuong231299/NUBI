@@ -22,27 +22,34 @@ import Quality from "@components/quality.astro";
 <Layout title="Trang chủ">
   <Container>
     <main>
-      <div class="grid gap-10 lg:gap-10 md:grid-cols-2 ">
-        <!-- {
-          latestPosts
-            .slice(0, 1)
-            .map((post) => (
-              <Postlist post={post} aspect="landscape" preloadImage={true} />
-            ))
-        } -->
+      <div class="header grid gap-10 lg:gap-10 md:grid-cols-2 bg px-1.5 ">
         <div><Header></Header></div>
-        <div class="py-6 md:order-1 hidden md:block"><Logo></Logo></div>
+        <div><Logo></Logo></div>
       </div>
-      <div class="grid gap-10 lg:gap-10 md:grid-cols-2">
+      <div class="header2 grid gap-10 lg:gap-10 md:grid-cols-2">
         <div><Logo2></Logo2></div>
         <div><About></About></div>
       </div>
-      
+      <div class="intro">
       <Introduce></Introduce>
-       
+    </div>
+    <div class="progress">
         <Progress></Progress>
+    </div>
+    <div class="quality">
         <Quality></Quality>
+    </div>
+    <div class="drink">
         <Drink></Drink>
+    </div>
     </main>
   </Container>
 </Layout>
+<style>
+/* .header{
+		background-color: blue;
+	}
+  .header{
+		background-color: blue;
+	} */
+</style>
