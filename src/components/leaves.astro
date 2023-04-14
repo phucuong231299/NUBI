@@ -1,0 +1,139 @@
+<div class="set">
+    <div><img src="leaves1.png"></div>
+    <div><img src="leaves2.png"></div>
+    <div><img src="leaves3.png"></div>
+    <div><img src="leaves4.png"></div>
+    <div><img src="leaves1.png"></div>
+  </div>
+  <div class="set set2">
+    <div><img src="leaves1.png"></div>
+    <div><img src="leaves2.png"></div>
+    <div><img src="leaves3.png"></div>
+    <div><img src="leaves4.png"></div>
+    <div><img src="leaves1.png"></div>
+
+  </div>
+  <div class="set set3">
+    <div><img src="leaves1.png"></div>
+    <div><img src="leaves2.png"></div>
+    <div><img src="leaves3.png"></div>
+    <div><img src="leaves4.png"></div>
+    <div><img src="leaves1.png"></div>
+  </div>
+  <style>
+     .set{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -99;
+	}
+   .set div
+  {
+	position: absolute;
+    display: block;
+	}
+   .set div:nth-child(1)
+  {
+		left: 20%;
+    animation: animateleaves 15s linear infinite;
+    animation-delay: -7s;
+	}
+   .set div:nth-child(2)
+  {
+		left: 50%;
+    animation: animateleaves 20s linear infinite;
+    animation-delay: -5s;
+	}
+   .set div:nth-child(3)
+  {
+		left: 50%;
+    animation: animateleaves 20s linear infinite;
+    animation-delay: 0s;
+	}
+   .set div:nth-child(4)
+  {
+		left: 0%;
+    animation: animateleaves 15s linear infinite;
+    animation-delay: -5s;
+	}
+   .set div:nth-child(5)
+  {
+		left: 20%;
+    animation: animateleaves 18s linear infinite;
+    animation-delay: -10s;
+	}
+  @keyframes animateleaves
+  {
+		0%{
+		opacity: 0;
+    top: -10%;
+    transform: translateX(20px) rotate(0deg);
+	}
+  10%{
+		opacity: 1;
+	}
+  20%{
+		
+    transform: translateX(-20px) rotate(45deg);
+	}
+  40%{
+		
+    transform: translateX(-20px) rotate(90deg);
+	}
+  60%{
+		 
+    transform: translateX(20px) rotate(180deg);
+	}
+  80%{
+    transform: translateX(-20px) rotate(180deg);
+	}
+  100%{
+    top: 110%;
+    transform: translateX(-20px) rotate(255deg);
+	}
+	}
+    .set2
+  {
+    transform: scale(2) rotateY(180deg);
+    filter: blur(2px);
+    z-index: -98;
+	}
+  .set3
+  {
+    transform: scale(0.8) rotateX(180deg);
+    filter: blur(4px);
+    z-index: -97;
+	}
+
+    @media(max-width: 1279px){
+        .set2
+  {
+    transform: scale(2) rotateY(115deg);
+    filter: blur(2px);
+    z-index: -98;
+	}
+  .set3
+  {
+    transform: scale(0.8) rotateX(180deg);
+    filter: blur(4px);
+    z-index: -97;
+	}
+}
+@media(max-width: 700px){
+        .set2
+  {
+    transform: scale(2) rotateY(100deg);
+    filter: blur(2px);
+    z-index: -98;
+	}
+  .set3
+  {
+    transform: scale(0.8) rotateX(180deg);
+    filter: blur(4px);
+    z-index: -97;
+	}
+}
+  </style>
