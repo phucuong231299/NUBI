@@ -21,7 +21,7 @@ import Quality from "@components/quality.astro";
 
 <Layout title="Trang chủ">
   <Container>
-    <main>
+    <main class="">
       <div class="header grid gap-10 lg:gap-10 md:grid-cols-2 bg px-1.5 ">
         <div><Header></Header></div>
         <div><Logo></Logo></div>
@@ -42,9 +42,6 @@ import Quality from "@components/quality.astro";
     <div class="drink">
         <Drink></Drink>
     </div>
-    </main>
-  </Container>
-
     <div class="set">
       <div><img src="leaves1.png"></div>
       <div><img src="leaves2.png"></div>
@@ -55,33 +52,14 @@ import Quality from "@components/quality.astro";
       <div><img src="leaves3.png"></div>
       <div><img src="leaves4.png"></div>
     </div>
-    <div class="set set2">
-      <div><img src="leaves1.png"></div>
-      <div><img src="leaves2.png"></div>
-      <div><img src="leaves3.png"></div>
-      <div><img src="leaves4.png"></div>
-      <div><img src="leaves1.png"></div>
-      <div><img src="leaves2.png"></div>
-      <div><img src="leaves3.png"></div>
-      <div><img src="leaves4.png"></div>
-    </div>
-    <div class="set set3">
-      <div><img src="leaves1.png"></div>
-      <div><img src="leaves2.png"></div>
-      <div><img src="leaves3.png"></div>
-      <div><img src="leaves4.png"></div>
-      <div><img src="leaves1.png"></div>
-      <div><img src="leaves2.png"></div>
-      <div><img src="leaves3.png"></div>
-      <div><img src="leaves4.png"></div>
-    </div>
-
+    </main>
+  </Container>
 </Layout>
 <style>
    .set{
-		position: absolute;
+	
     width: 100%;
-    height: 215%;
+    height: 100%;
     top: 0;
     left: 0;
     pointer-events: none;
@@ -92,6 +70,9 @@ import Quality from "@components/quality.astro";
 		position: absolute;
     display: block;
 	}
+  .set div img{
+    width: 50%;
+  }
    .set div:nth-child(1)
   {
 		left: 20%;
