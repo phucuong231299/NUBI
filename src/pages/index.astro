@@ -6,6 +6,7 @@ import Logo from "@components/logo.astro";
 import Logo2 from "@components/logo2.astro";
 import Header from "@components/header.astro";
 import Drink from "@components/menudrink.astro";
+import Menu from "@components/menupopula.astro";
 import Introduce from "@components/intro.astro";
 import Progress from "@components/progressbar.astro";
 import Quality from "@components/quality.astro";
@@ -33,6 +34,11 @@ import Leaves from "@components/leaves.astro";
       </div>
       <div class="intro">
       <Introduce></Introduce>
+    </div>
+    <br><br>
+    <h1 class="text-6xl text-center ">Menu</h1>  
+    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
+      <Menu></Menu>
     </div>
     <div class="progress">
         <Progress></Progress>
