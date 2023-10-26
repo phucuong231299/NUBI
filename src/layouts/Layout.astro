@@ -1,28 +1,25 @@
 ---
-import { SEO } from "astro-seo";
 import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar.astro";
 import "@fontsource/inter/variable.css";
 
+import { SEO } from "astro-seo";
+
 export interface Props {
-  title: string;
+  title?: string;
   desc?: string;
+  ogimage?: string;
 }
 
-const canonicalURL = new URL("http://localhost:3000/").toString();
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
-const resolvedImageWithDomain = new URL(
-  "/nubi.png",
-  "http://localhost:3000/"
-).toString();
+const { title, desc, ogimage = "/opengraph.jpg" } = Astro.props;
 
-
-
-const { title, desc } = Astro.props;
+const resolvedOGImage = new URL(Astro.url.pathname, Astro.site).toString();
 
 const makeTitle = title
-  ? title + " - " + "Nubi Coffee"
-  : "Nubi Coffee - Hương vị trên từng giọt cà phê";
+  ? title + " | " + "Stablo"
+  : "Stablo — Free Blog Website Template built with Astro & MDX";
 ---
 
 <!DOCTYPE html>
@@ -32,12 +29,10 @@ const makeTitle = title
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-
-    <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
       description={desc ||
-      "Nubi coffee là nơi đưa cà phê trở lại đúng và thật với giá trị của nó từ phương thức pha chế cho đến cách thưởng thức một tách cà phê phong cách, đúng điệu; tự hào là thương hiệu mang sản phẩm cafe sạch đến với người dân miền Tây."}
+        "Stablo is a Blog Starter Template built with Astro & MDX."}
       canonical={canonicalURL}
       twitter={{
         creator: "@surjithctly",
@@ -48,11 +43,11 @@ const makeTitle = title
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Nubi - Starter Template for Astro`,
-          image: resolvedImageWithDomain,
+          title: `Stablo - Blog Starter Template for Astro`,
+          image: resolvedOGImage,
         },
         image: {
-          alt: "Astroship Homepage Screenshot",
+          alt: "Stablo Screenshot",
         },
       }}
     />
@@ -67,7 +62,6 @@ const makeTitle = title
       img {
         content-visibility: auto;
       }
-      
     </style>
   </body>
 </html>
