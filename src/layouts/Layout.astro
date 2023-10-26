@@ -6,16 +6,19 @@ import "@fontsource/inter/variable.css";
 
 export interface Props {
   title: string;
+  desc?: string;
 }
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
+const canonicalURL = new URL("http://localhost:3000/").toString();
 
 const resolvedImageWithDomain = new URL(
-  "/opengraph.jpg",
-  Astro.site
+  "/nubi.png",
+  "http://localhost:3000/"
 ).toString();
 
-const { title } = Astro.props;
+
+
+const { title, desc } = Astro.props;
 
 const makeTitle = title
   ? title + " - " + "Nubi Coffee"
@@ -33,7 +36,8 @@ const makeTitle = title
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      description="Nubi coffee là nơi đưa cà phê trở lại đúng và thật với giá trị của nó từ phương thức pha chế cho đến cách thưởng thức một tách cà phê phong cách, đúng điệu; tự hào là thương hiệu mang sản phẩm cafe sạch đến với người dân miền Tây."
+      description={desc ||
+      "Nubi coffee là nơi đưa cà phê trở lại đúng và thật với giá trị của nó từ phương thức pha chế cho đến cách thưởng thức một tách cà phê phong cách, đúng điệu; tự hào là thương hiệu mang sản phẩm cafe sạch đến với người dân miền Tây."}
       canonical={canonicalURL}
       twitter={{
         creator: "@surjithctly",
@@ -44,7 +48,7 @@ const makeTitle = title
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Astroship - Starter Template for Astro`,
+          title: `Nubi - Starter Template for Astro`,
           image: resolvedImageWithDomain,
         },
         image: {
