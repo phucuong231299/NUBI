@@ -11,11 +11,11 @@ export interface Props {
   ogimage?: string;
 }
 
-const canonicalURL = new URL("http://localhost:3000/").toString();
+const canonicalURL = new URL("https://nubicoffee.netlify.app/").toString();
 
 const { title, desc, ogimage} = Astro.props;
 
-const resolvedOGImage = new URL("/nubi.png", "http://localhost:3000/").toString();
+const resolvedOGImage = new URL("/nubi.png", "https://nubicoffee.netlify.app/").toString();
 
 const makeTitle = title
   ? title + " - " + "Nubi Coffee"
@@ -32,7 +32,7 @@ const makeTitle = title
     <SEO
       title={makeTitle}
       description={desc ||
-        "Stablo is a Blog Starter Template built with Astro & MDX."}
+        "Nubi coffee cà phê là nơi đưa cà phê trở lại đúng và thật với giá trị của nó từ phương thức pha chế cho đến cách thưởng thức một tách cà phê phong cách, đúng điệu; tự hào là thương hiệu mang sản phẩm cafe sạch đến với người dân miền Tây."}
       canonical={canonicalURL}
       twitter={{
         creator: "@surjithctly",
